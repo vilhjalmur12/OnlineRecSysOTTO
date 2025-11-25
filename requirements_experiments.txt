@@ -1,0 +1,7 @@
+numpy>=1.26
+pandas>=2.1
+matplotlib>=3.8
+pyarrow>=14.0
+duckdb>=1.4
+gensim>=4.3
+faiss-cpu>=1.13.0
