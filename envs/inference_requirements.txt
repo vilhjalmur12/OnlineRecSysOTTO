@@ -1,0 +1,19 @@
+# --- Web Server / API ---
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+
+# --- Data & Storage ---
+duckdb>=0.10.0
+numpy>=1.24.0
+pandas>=2.1.0
+pyarrow>=15.0.0
+
+# --- ML / Vector Search ---
+faiss-cpu>=1.7.4
+
+# --- Pydantic (FastAPI Models) ---
+pydantic>=2.6.0
+
+# --- Optional quality-of-life ---
+orjson>=3.9.0          # Fast JSON serialization (FastAPI auto-uses if installed)
+python-dotenv>=1.0.0   # For OTTO_RECSYS_MODEL_RUN env config

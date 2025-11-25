@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ottorecsys"
+version = "0.0.1"
+description = "A recommender system case study for association rules and frequently bougt together items (FreBoTo)."
+authors = [
+  { name = "Vilhjalmur Runar Vilhjalmsson", email = "your@email.com" },
+]
+license = { file = "LICENSE" }
+keywords = ["machine learning", "MLOps"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python :: 3",
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dynamic = ["dependencies", "optional-dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.dynamic.optional-dependencies]
+dev = {file = ['requirements_dev.txt']}
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["I", "N", "E", "W", ]
+
+[tool.coverage.run]
+omit = ["tests/*"]
